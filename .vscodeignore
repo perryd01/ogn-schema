@@ -1,0 +1,14 @@
+.github/** */
+.vscode/**
+.vscode-test/**
+out/test/**
+build/
+markdownPreview/
+notebook/
+src/
+**/*.map
+.gitignore
+tsconfig*.json
+pnpm-lock.yaml
+
+!src/schema/ogn.schema.json
