@@ -1,0 +1,47 @@
+{
+  "name": "ogn-schema-extension",
+  "displayName": "OGN Schema",
+  "description": "Omniverse Graph Node (OGN) helper for VsCode",
+  "version": "0.0.1",
+  "publisher": "perryd01",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:ogn"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "ogn",
+        "extensions": [
+          ".ogn"
+        ],
+        "aliases": [
+          "OGN",
+          "ogn"
+        ]
+      }
+    ],
+    "configuration": {},
+    "commands": []
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint \"src/**/*.ts\"",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.26.0",
+    "typescript": "^5.4.2"
+  }
+}
