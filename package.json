@@ -34,7 +34,8 @@
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "lint": "eslint \"src/**/*.ts\"",
-    "watch": "tsc -watch -p ./"
+    "watch": "tsc -watch -p ./",
+    "test": "exit 0"
   },
   "devDependencies": {
     "@types/node": "^18",
