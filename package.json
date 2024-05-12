@@ -4,6 +4,7 @@
   "description": "Omniverse Graph Node (OGN) helper for VsCode",
   "version": "0.0.1",
   "publisher": "perryd01",
+  "repository": "https://github.com/perryd01/ogn-schema",
   "engines": {
     "vscode": "^1.74.0"
   },
